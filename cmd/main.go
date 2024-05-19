@@ -1,5 +1,9 @@
 package main
 
+import "context"
+
 func main() {
-	pgxpool.Conn
+
 }
+
+type Handler func(ctx context.Context)
