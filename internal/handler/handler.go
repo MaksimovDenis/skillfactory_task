@@ -6,11 +6,11 @@ import (
 )
 
 type Handler struct {
-	service *service.TasksService
+	tasksService service.TasksService
 }
 
-func NewHandler(service *service.TasksService) *Handler {
-	return &Handler{service: service}
+func NewHandler(tasksService service.TasksService) *Handler {
+	return &Handler{tasksService: tasksService}
 }
 
 func (hdl *Handler) InitRoutes() *gin.Engine {
@@ -20,7 +20,9 @@ func (hdl *Handler) InitRoutes() *gin.Engine {
 	{
 		tasks := api.Group("/tasks")
 		{
-			tasks.GET("/:id")
+			tasks.GET("/:id", hdl.getTaskByID)
 		}
 	}
+
+	return router
 }

@@ -1,9 +1,22 @@
 package main
 
-import "context"
+import (
+	"context"
+	"log"
+
+	"Skillfactory_task_30.8.1/internal/app"
+)
 
 func main() {
+	ctx := context.Background()
 
+	a, err := app.NewApp(ctx)
+	if err != nil {
+		log.Fatalf("failed to init app: %s", err.Error())
+	}
+
+	err = a.Run()
+	if err != nil {
+		log.Fatalf("failed to run app: %s", err.Error())
+	}
 }
-
-type Handler func(ctx context.Context)

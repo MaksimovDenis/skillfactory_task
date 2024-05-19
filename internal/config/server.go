@@ -21,7 +21,7 @@ type serverConfig struct {
 	port string
 }
 
-func NewServeronfig() (ServerConfig, error) {
+func NewServerConfig() (ServerConfig, error) {
 	host := os.Getenv(hostEnvName)
 	if len(host) == 0 {
 		return nil, errors.New("server host not found")
