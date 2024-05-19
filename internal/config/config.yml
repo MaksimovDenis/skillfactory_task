@@ -1,8 +1,0 @@
-port: "8000"
-
-db:
-  username: "postgres"
-  host: "db"
-  port: "5430"
-  dbname: "skillfactory"
-  sslmode: "disalbe"
