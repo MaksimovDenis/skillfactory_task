@@ -7,5 +7,6 @@ import (
 )
 
 type TasksService interface {
-	Get(ctx context.Context, userID int) (*models.Tasks, error)
+	GetTaskByAuthorName(ctx context.Context, authorName string) (*models.Tasks, error)
+	GetTaskByLabel(ctx context.Context, label string) (*[]models.Tasks, error)
 }
