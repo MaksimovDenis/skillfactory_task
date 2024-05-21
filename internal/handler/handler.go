@@ -18,15 +18,16 @@ func (hdl *Handler) InitRoutes() *gin.Engine {
 
 	api := router.Group("/api")
 	{
-		author := api.Group("/author")
+		tasks := api.Group("/tasks")
 		{
-			author.GET("/:authorName", hdl.getTaskByAuthorName)
-		}
-		label := api.Group("/label")
-		{
-			label.GET("/:label", hdl.getTaskByLabel)
-		}
+			tasks.POST("/", hdl.createTask)
 
+			tasks.GET("/", hdl.getTasks)
+
+			tasks.GET("/author/:authorName", hdl.getTaskByAuthorName)
+
+			tasks.GET("/label/:label", hdl.getTaskByLabel)
+		}
 	}
 
 	return router

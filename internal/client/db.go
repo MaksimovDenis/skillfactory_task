@@ -18,7 +18,7 @@ type Client interface {
 
 // TxManager менеджер транзакций, который выполняет указанный пользователем обработчик в транзакции
 type TxManger interface {
-	ReadCommited(ctx context.Context, f Handler) error
+	ReadCommitted(ctx context.Context, f Handler) error
 }
 
 // SQLExecer комбинирует NamedExecer и QueryExecer
