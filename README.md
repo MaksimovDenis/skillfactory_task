@@ -4,7 +4,7 @@
 
 1. Сколнировать репозиторий:
 ```bash   
-git clone https://github.com/MaksimovDenis/avito_testcase.git
+git clone https://github.com/MaksimovDenis/Skillfactory_task_30.8.1.git
 ```
 
 2. Перейти в директорию проекта (если Вы не в ней):  
