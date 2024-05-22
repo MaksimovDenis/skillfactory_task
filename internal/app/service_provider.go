@@ -4,15 +4,15 @@ import (
 	"context"
 	"log"
 
-	db "Skillfactory_task_30.8.1/internal/client"
-	"Skillfactory_task_30.8.1/internal/client/db/pg"
-	"Skillfactory_task_30.8.1/internal/client/db/transaction"
-	"Skillfactory_task_30.8.1/internal/config"
-	"Skillfactory_task_30.8.1/internal/handler"
-	"Skillfactory_task_30.8.1/internal/repository"
-	tasksRepository "Skillfactory_task_30.8.1/internal/repository/tasks"
-	"Skillfactory_task_30.8.1/internal/service"
-	tasksService "Skillfactory_task_30.8.1/internal/service/tasks"
+	db "skillfactory_task_30.8.1/internal/client"
+	"skillfactory_task_30.8.1/internal/client/db/pg"
+	"skillfactory_task_30.8.1/internal/client/db/transaction"
+	"skillfactory_task_30.8.1/internal/config"
+	"skillfactory_task_30.8.1/internal/handler"
+	"skillfactory_task_30.8.1/internal/repository"
+	tasksRepository "skillfactory_task_30.8.1/internal/repository/tasks"
+	"skillfactory_task_30.8.1/internal/service"
+	tasksService "skillfactory_task_30.8.1/internal/service/tasks"
 )
 
 type serviceProvider struct {

@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	dsnEnvName = "PG_DSN"
+	dsnenvName = "PG_DSN"
 )
 
 type PGConfig interface {
@@ -18,7 +18,7 @@ type pgConfig struct {
 }
 
 func NewPGConfig() (PGConfig, error) {
-	dsn := os.Getenv(dsnEnvName)
+	dsn := os.Getenv(dsnenvName)
 	if len(dsn) == 0 {
 		return nil, errors.New("pg dsn not found")
 	}

@@ -8,8 +8,8 @@ import (
 )
 
 const (
-	hostEnvName = "SERVER_HOST"
-	portEnvName = "SERVER_PORT"
+	hostenvName = "SERVER_HOST"
+	portenvName = "SERVER_PORT"
 )
 
 type ServerConfig interface {
@@ -22,12 +22,12 @@ type serverConfig struct {
 }
 
 func NewServerConfig() (ServerConfig, error) {
-	host := os.Getenv(hostEnvName)
+	host := os.Getenv(hostenvName)
 	if len(host) == 0 {
 		return nil, errors.New("server host not found")
 	}
 
-	port := os.Getenv(portEnvName)
+	port := os.Getenv(portenvName)
 	if len(port) == 0 {
 		return nil, errors.New("server port not found")
 	}

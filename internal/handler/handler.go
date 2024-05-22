@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"Skillfactory_task_30.8.1/internal/service"
 	"github.com/gin-gonic/gin"
+	"skillfactory_task_30.8.1/internal/service"
 )
 
 type Handler struct {
@@ -23,10 +23,19 @@ func (hdl *Handler) InitRoutes() *gin.Engine {
 			tasks.POST("/", hdl.createTask)
 
 			tasks.GET("/", hdl.getTasks)
+			tasks.GET("/:id", hdl.getTaskById)
+			tasks.PATCH("/", hdl.updateTaskById)
+			tasks.DELETE("/:id", hdl.deleteTaskById)
 
-			tasks.GET("/author/:authorName", hdl.getTaskByAuthorName)
+			author := api.Group("/author")
+			{
+				author.GET("/:authorName", hdl.getTaskByAuthorName)
+			}
 
-			tasks.GET("/label/:label", hdl.getTaskByLabel)
+			label := api.Group("/label")
+			{
+				label.GET("/:label", hdl.getTaskByLabel)
+			}
 		}
 	}
 

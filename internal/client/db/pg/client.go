@@ -3,9 +3,9 @@ package pg
 import (
 	"context"
 
-	db "Skillfactory_task_30.8.1/internal/client"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/pkg/errors"
+	db "skillfactory_task_30.8.1/internal/client"
 )
 
 type pgClient struct {

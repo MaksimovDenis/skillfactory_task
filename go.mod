@@ -1,4 +1,4 @@
-module Skillfactory_task_30.8.1
+module skillfactory_task_30.8.1
 
 go 1.22.2
 

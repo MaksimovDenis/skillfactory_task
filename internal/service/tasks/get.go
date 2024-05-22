@@ -3,7 +3,7 @@ package tasks
 import (
 	"context"
 
-	"Skillfactory_task_30.8.1/internal/models"
+	"skillfactory_task_30.8.1/internal/models"
 )
 
 func (s *serv) GetTasks(ctx context.Context) (*[]models.Tasks, error) {
@@ -31,4 +31,22 @@ func (s *serv) GetTaskByLabel(ctx context.Context, label string) (*[]models.Task
 	}
 
 	return tasks, nil
+}
+
+func (s *serv) GetUserById(ctx context.Context, id int) (*models.User, error) {
+	user, err := s.tasksRepository.GetUserById(ctx, id)
+	if err != nil {
+		return nil, err
+	}
+
+	return user, nil
+}
+
+func (s *serv) GetTaskById(ctx context.Context, id int) (*models.Tasks, error) {
+	task, err := s.tasksRepository.GetTaskById(ctx, id)
+	if err != nil {
+		return nil, err
+	}
+
+	return task, nil
 }

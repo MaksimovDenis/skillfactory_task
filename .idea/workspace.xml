@@ -40,7 +40,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:MaksimovDenis/Skillfactory_task_30.8.1.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:MaksimovDenis/skillfactory_task_30.8.1.git&quot;,
     &quot;accountId&quot;: &quot;2788e220-e8d9-4fbf-931c-7061702ec893&quot;
   }
 }</component>
@@ -123,7 +123,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="env" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

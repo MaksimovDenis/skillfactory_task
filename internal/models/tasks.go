@@ -12,7 +12,15 @@ type Tasks struct {
 	Content    string     `json:"content" db:"content"`
 }
 
-type CreateTasks struct {
+type CreateTask struct {
+	AuthorId   int    `json:"author_id" db:"author_id"`
+	AssignedId int    `json:"assigned_id" db:"assigned_id"`
+	Title      string `json:"title" db:"title"`
+	Content    string `json:"content" db:"content"`
+}
+
+type UpdateTask struct {
+	Id         int    `json:"id" db:"id"`
 	AuthorId   int    `json:"author_id" db:"author_id"`
 	AssignedId int    `json:"assigned_id" db:"assigned_id"`
 	Title      string `json:"title" db:"title"`

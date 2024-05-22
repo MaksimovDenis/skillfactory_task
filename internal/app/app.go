@@ -9,7 +9,7 @@ import (
 	"syscall"
 	"time"
 
-	"Skillfactory_task_30.8.1/internal/config"
+	"skillfactory_task_30.8.1/internal/config"
 )
 
 type App struct {
