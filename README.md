@@ -27,7 +27,7 @@ make install-deps
 make migration-up
 ```  
 
-6. Остановка контейнеров:  
+6. Остановка контейнера:  
 ```bash      
 make down
 ```  
