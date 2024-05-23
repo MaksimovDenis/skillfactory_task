@@ -12,25 +12,25 @@ git clone https://github.com/MaksimovDenis/skillfactory_task.git
 cd skillfactory_task 
 ```
 
-3. Поднимет базу данных:  
+3. Запуск сервера и базы данных:  
 ```bash      
 make up 
 ```
 
-4. Локальная установка утилиты миграции:  
+4. Локальная установка утилиты миграции (убедитесь, что Вы в корниевой папке проека):    
 ```bash      
 make install-deps 
 ```
 
 5. Накатить миграции:  
 ```bash      
-make down 
-```
+make migration-up
+```  
 
-6. Запустить сервис:  
+6. Остановка контейнера:  
 ```bash      
-make run 
-```
+make down
+```  
 
 # Примеры запросов  
 

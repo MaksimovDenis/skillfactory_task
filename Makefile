@@ -21,6 +21,3 @@ up:
 
 down:
 	docker-compose down
-
-run:
-	go run ./cmd/main.go
