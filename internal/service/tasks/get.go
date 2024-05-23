@@ -3,7 +3,7 @@ package tasks
 import (
 	"context"
 
-	"skillfactory_task_30.8.1/internal/models"
+	"skillfactory_task/internal/models"
 )
 
 func (s *serv) GetTasks(ctx context.Context) (*[]models.Tasks, error) {

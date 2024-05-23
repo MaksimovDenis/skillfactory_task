@@ -3,7 +3,7 @@ package pg
 import (
 	"context"
 
-	db "skillfactory_task_30.8.1/internal/client"
+	db "skillfactory_task/internal/client"
 
 	"github.com/georgysavva/scany/pgxscan"
 	"github.com/jackc/pgconn"

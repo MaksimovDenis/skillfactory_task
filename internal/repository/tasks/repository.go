@@ -5,13 +5,14 @@ import (
 	"fmt"
 	"strings"
 
+	db "skillfactory_task/internal/client"
+	"skillfactory_task/internal/models"
+	"skillfactory_task/internal/repository"
+
 	sq "github.com/Masterminds/squirrel"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
-	db "skillfactory_task_30.8.1/internal/client"
-	"skillfactory_task_30.8.1/internal/models"
-	"skillfactory_task_30.8.1/internal/repository"
 )
 
 const (

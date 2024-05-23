@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 
-	"skillfactory_task_30.8.1/internal/models"
+	"skillfactory_task/internal/models"
 )
 
 type TasksService interface {

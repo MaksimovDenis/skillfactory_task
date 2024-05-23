@@ -4,8 +4,9 @@ import (
 	"net/http"
 	"strconv"
 
+	"skillfactory_task/internal/models"
+
 	"github.com/gin-gonic/gin"
-	"skillfactory_task_30.8.1/internal/models"
 )
 
 func (hdl *Handler) createTask(ctx *gin.Context) {
