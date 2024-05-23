@@ -3,10 +3,11 @@ package transaction
 import (
 	"context"
 
+	db "skillfactory_task/internal/client"
+	"skillfactory_task/internal/client/db/pg"
+
 	"github.com/jackc/pgx/v4"
 	"github.com/pkg/errors"
-	db "skillfactory_task_30.8.1/internal/client"
-	"skillfactory_task_30.8.1/internal/client/db/pg"
 )
 
 type manager struct {

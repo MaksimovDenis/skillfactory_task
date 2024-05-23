@@ -1,15 +1,15 @@
-# skillfactory_task_30.8.1
+# skillfactory_task
 
 # Запуск  
 
 1. Сколнировать репозиторий:
 ```bash   
-git clone https://github.com/MaksimovDenis/Skillfactory_task_30.8.1.git
+git clone https://github.com/MaksimovDenis/skillfactory_task.git
 ```
 
 2. Перейти в директорию проекта (если Вы не в ней):  
 ```bash    
-cd skillfactory_task_30.8.1 
+cd skillfactory_task 
 ```
 
 3. Поднимет базу данных:  

@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"skillfactory_task_30.8.1/internal/app"
+	"skillfactory_task/internal/app"
 )
 
 func main() {

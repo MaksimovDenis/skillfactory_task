@@ -1,9 +1,9 @@
 package tasks
 
 import (
-	db "skillfactory_task_30.8.1/internal/client"
-	"skillfactory_task_30.8.1/internal/repository"
-	"skillfactory_task_30.8.1/internal/service"
+	db "skillfactory_task/internal/client"
+	"skillfactory_task/internal/repository"
+	"skillfactory_task/internal/service"
 )
 
 type serv struct {

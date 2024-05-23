@@ -1,8 +1,9 @@
 package handler
 
 import (
+	"skillfactory_task/internal/service"
+
 	"github.com/gin-gonic/gin"
-	"skillfactory_task_30.8.1/internal/service"
 )
 
 type Handler struct {
